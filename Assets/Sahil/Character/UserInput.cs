@@ -9,12 +9,13 @@ public class UserInput : MonoBehaviour
     public bool Fire1;
     public bool Fire2;
     public Vector3 inputVector;
-    // Update is called once per frame
     public Transform Maincam;
+    CameraController camcom;
 
     void Awake()
     {
-        Maincam = Camera.main.transform;
+        camcom = FindObjectOfType<CameraController>();
+        Maincam = camcom.transform.GetChild(0);
     }
 
     void FixedUpdate()
@@ -25,22 +26,6 @@ public class UserInput : MonoBehaviour
         Fire2 = Input.GetButton("Fire2");
         inputVector = GetAxisVector(Vertical, Horizontal, Maincam.forward, Maincam.right, Vector3.up);
     }
-
-    /// <summary>
-    /// Gets Two Inputs and maps them on a plane and returns a vector
-    /// especially useful in Camera based movement
-    /// </summary>
-    /// <param name="v">Forward input float</param>
-    /// 
-    /// <param name="h">Right Input float</param>
-    /// 
-    /// <param name="forward">The Forward Vector on which axes are mapped</param>
-    /// 
-    /// <param name="right">The Right Vector on which axes are mapped </param>
-    /// 
-    /// <param name="planetomap">Plane On Which Axis are mapped</param>
-    /// 
-    /// <returns>"Vector3"</returns>
 
     Vector3 GetAxisVector(float v,float h,Vector3 forward, Vector3 right, Vector3 planetomap)
     {
