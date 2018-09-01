@@ -10,7 +10,12 @@ public class UserInput : MonoBehaviour
     public bool Fire2;
     public Vector3 inputVector;
     // Update is called once per frame
-    private Transform Maincam = Camera.main.transform;
+    public Transform Maincam;
+
+    private void Start()
+    {
+        Maincam = Camera.main.transform;
+    }
 
     void FixedUpdate()
     {
