@@ -30,7 +30,7 @@ public class StatesManager : MonoBehaviour {
         currentState.OnTick();
 	}
 
-    void DoTransition(State state)
+    public void DoTransition(State state)
     {
         state.owner = this.gameObject;
         this.currentState.OnExit();
