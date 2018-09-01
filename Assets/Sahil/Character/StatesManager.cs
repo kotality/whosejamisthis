@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class StatesManager : MonoBehaviour {
     public State currentState;
+    
    
 	// Use this for initialization
 	void Start () {
-        
+        currentState.owner = this.gameObject;
 	}
 	
 	// Update is called once per frame
@@ -16,6 +17,7 @@ public class StatesManager : MonoBehaviour {
 	}
     void DoTransition(State state)
     {
+        state.owner = this.gameObject;
         this.currentState.OnExit();
         this.currentState = state;
         state.OnStart();
