@@ -26,20 +26,26 @@ public class GenericThink : State {
 
     public override void OnTick()
     {
-        if (aim.creatureToBeAngryAt == null)
+        if (timeLeftOnState <= 0.0f)
         {
-            if (timeLeftOnState <= 0.0f)
+            aim.creatureToBeAngryAt = null;
+            float rng = Random.value;
+            if (rng <= 0.5f)
             {
-                float rng = Random.value;
-                if (rng <= 0.5f)
-                {
-                    aim.NextState = PatrolState;
-                }
-                else
-                {
-                    aim.NextState = IdleState;
-                }
-                timeLeftOnState = Random.Range(1.0f, maxStateTimer);
+                aim.NextState = PatrolState;
+            }
+            else
+            {
+                aim.NextState = IdleState;
+            }
+            timeLeftOnState = Random.Range(1.0f, maxStateTimer);
+        }
+        else if(aim.creatureToBeAngryAt != null)
+        {
+            aim.NextState = AngryState;
+            if(CanOwnerSee(aim.creatureToBeAngryAt))
+            {
+                timeLeftOnState = maxStateTimer;
             }
             else
             {
@@ -48,11 +54,7 @@ public class GenericThink : State {
         }
         else
         {
-            aim.NextState = AngryState;
-            if(!CanOwnerSee(aim.creatureToBeAngryAt))
-            {
-
-            }
+            timeLeftOnState -= Time.deltaTime;
         }
     }
 
