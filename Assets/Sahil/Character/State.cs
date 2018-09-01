@@ -10,4 +10,8 @@ public class State : ScriptableObject {
     public virtual void OnTick()
     {
     }
+    public virtual void OnExit()
+    {
+
+    }
 }
