@@ -9,5 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6f8ac19cb2865e47a73606a2a8755b9, type: 3}
-  m_Name: Move
+  m_Name: Move 1
   m_EditorClassIdentifier: 
+  Statename: 
+  owner: {fileID: 0}
+  states: {fileID: 0}
+  rb: {fileID: 0}
+  ih: {fileID: 0}
+  speed: 10

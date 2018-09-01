@@ -1,20 +1,35 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class StatesManager : MonoBehaviour {
     public State currentState;
-    
-   
-	// Use this for initialization
-	void Start () {
+
+    [SerializeField] public State[] statesKeep;
+    //public Hashtable<State> stateVault;
+    public Hashtable stateVault;
+
+    void Awake()
+    {
+      foreach(State s in statesKeep)
+        {
+            stateVault.Add(s.Statename, s);
+        }      
+    }
+
+    void Start ()
+    {
+        Debug.Log("start");
         currentState.owner = this.gameObject;
+        currentState.OnStart();
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
+        Debug.Log("Update");
         currentState.OnTick();
 	}
+
     void DoTransition(State state)
     {
         state.owner = this.gameObject;
