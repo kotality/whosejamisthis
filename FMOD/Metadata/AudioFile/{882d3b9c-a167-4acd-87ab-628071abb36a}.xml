@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{882d3b9c-a167-4acd-87ab-628071abb36a}">
+        <property name="assetPath">
+            <value>Char/Ice_Idle.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>33.053562499999998</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{b81a0e91-393d-453d-8486-d6f4af787a48}</destination>
+        </relationship>
+    </object>
+</objects>
