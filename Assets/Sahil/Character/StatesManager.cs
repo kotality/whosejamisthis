@@ -12,10 +12,12 @@ public class StatesManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        currentState.OnTick();
 	}
-    void DoTransition()
+    void DoTransition(State state)
     {
-        
+        this.currentState.OnExit();
+        this.currentState = state;
+        state.OnStart();
     }
 }

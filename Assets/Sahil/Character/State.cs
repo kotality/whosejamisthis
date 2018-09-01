@@ -24,4 +24,8 @@ public class State : ScriptableObject {
     {
 >>>>>>> Sahil
     }
+    public virtual void OnExit()
+    {
+
+    }
 }
