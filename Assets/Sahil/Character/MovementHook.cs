@@ -11,11 +11,11 @@ public class MovementHook : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
-    public void LookAtMoveDir()
+    public void LookAtMoveDir(Vector3 Dir,Transform owner,float speed)
     {
-
+        owner.rotation = Quaternion.Slerp(owner.rotation, Quaternion.LookRotation(Dir), speed * Time.deltaTime);
     }
 }
