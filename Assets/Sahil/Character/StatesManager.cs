@@ -13,7 +13,8 @@ public class StatesManager : MonoBehaviour {
     {
       foreach(State s in statesKeep)
         {
-            stateVault.Add(s.Statename, s);
+            if(s != null)
+                   stateVault.Add(s.Statename, s);
         }      
     }
 
