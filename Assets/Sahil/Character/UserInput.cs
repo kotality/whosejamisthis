@@ -12,7 +12,7 @@ public class UserInput : MonoBehaviour
     // Update is called once per frame
     public Transform Maincam;
 
-    private void Start()
+    void Awake()
     {
         Maincam = Camera.main.transform;
     }

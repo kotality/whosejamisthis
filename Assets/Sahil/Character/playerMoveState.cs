@@ -5,7 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="States/PlayerMove")]
 public class playerMoveState : State {
     public float speed;
-    Rigidbody rb;
 
     public override void OnStart()
     {
@@ -17,7 +16,7 @@ public class playerMoveState : State {
     public override void OnTick()
     {
         base.OnTick();
-        if(owner.GetComponent<UserInput>().inputVector.magnitude > 0)
+        if(ih.inputVector.magnitude > 0)
         {
             rb.velocity = owner.GetComponent<UserInput>().inputVector * speed;
             lookAtDir(rb.velocity.normalized);

@@ -1,11 +1,13 @@
 ﻿using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class StatesManager : MonoBehaviour {
     public State currentState;
 
     [SerializeField] public State[] statesKeep;
-    [SerializeField] public Dictionary<string, State> stateVault;
+    //public Hashtable<State> stateVault;
+    public Hashtable stateVault;
 
     void Awake()
     {
