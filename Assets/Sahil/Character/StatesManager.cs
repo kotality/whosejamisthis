@@ -12,7 +12,25 @@ public class StatesManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if(!currentState) { return; }
+
         currentState.OnTick();
+
+        if(currentState.nextStates.Length >= 1)
+        {
+            State nextState = null;
+            for(int i = 0; currentState.nextStates[i] && !nextState; i++)
+            {
+                if(currentState.nextStates[i].StateCriteriaMet())
+                {
+                    nextState = currentState.nextStates[i];
+                }
+            }
+            if(nextState)
+            {
+                DoTransition(nextState);
+            }
+        }
 	}
     void DoTransition(State state)
     {
