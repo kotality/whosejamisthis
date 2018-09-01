@@ -1,8 +1,3 @@
-﻿/*
-ATTENTION: Please dont use this script right now, i have to set it up first and see if i have to change anything according to this project!
-Jay
- */
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,7 +21,16 @@ public class AudioController : MonoBehaviour {
 		}
 	}
 
-	public void Play(){
+	public void Play(int clipPosition=0){
+		//Clip Position: If Random Clip is disabled you can chose the clip you want to play with AudioController.Play(clipPosition);
+		//If invalid clip position is selected, clip at position 0 will be used
+		if(clipPosition<audioClp.Length && clipPosition>=0){
+			audioSrc.clip = audioClp[clipPosition];
+		}else{
+			audioSrc.clip = audioClp[0];
+			Debug.Log("Audio Clip not found/not existing. Used Default one instead!");
+		}
+
 		if (audioSrc.isPlaying) {
 			if (waitToFinish) {
 				return;
