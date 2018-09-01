@@ -362,7 +362,6 @@ GameObject:
   - component: {fileID: 797555116}
   - component: {fileID: 797555115}
   - component: {fileID: 797555114}
-  - component: {fileID: 797555120}
   - component: {fileID: 797555121}
   m_Layer: 0
   m_Name: TestPawn
@@ -382,6 +381,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669e216522c767e478e2f23ba2b4b935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AIStateMachine: {fileID: 0}
+  MovementAbility: {fileID: 0}
+  CombatAbility1: {fileID: 0}
+  CombatAbility2: {fileID: 0}
 --- !u!54 &797555115
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -395,7 +398,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &797555116
 CapsuleCollider:
@@ -466,19 +469,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &797555120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 797555113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc50d5a5c886a714db25a3fa62526cfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Controller: {fileID: 0}
-  Pawn: {fileID: 797555114}
 --- !u!95 &797555121
 Animator:
   serializedVersion: 3
