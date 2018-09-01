@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StatesManager : MonoBehaviour {
     public State currentState;
+    public bool runStateMachine = true;
    
 	// Use this for initialization
 	void Start () {
@@ -12,7 +13,7 @@ public class StatesManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(!currentState) { return; }
+        if(!currentState || !runStateMachine) { return; }
 
         currentState.OnTick();
 
