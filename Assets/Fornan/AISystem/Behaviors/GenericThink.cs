@@ -4,5 +4,11 @@ using UnityEngine;
 
 public class GenericThink : State {
 
-	//The think state figures out what the next state to do should be based off of stimuli
+    //The think state figures out what the next state to do should be based off of stimuli
+
+    public override void OnStart()
+    {
+        base.OnStart();
+
+    }
 }
