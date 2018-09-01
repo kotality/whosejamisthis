@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PrimaryAttack : StateMachineBehaviour {
 
+    public void Help()
+    {
+
+    }
     public override void OnStateEnter(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)
     {
         Pawn _controlledPawn = animator.GetComponent<Pawn>();
