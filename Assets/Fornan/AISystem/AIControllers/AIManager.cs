@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class AIManager : MonoBehaviour {
 
-    protected NavMeshAgent _myAgent;
+    public NavMeshAgent MyAgent;
     protected StatesManager _sm;
     protected bool _isThinking;
 
@@ -14,32 +14,37 @@ public class AIManager : MonoBehaviour {
     public GameObject creatureToBeAngryAt = null;
 
     public State ThinkState;
-    public State AngryState;
-    public State IdleState;
-    public State PatrolState;
-    public State AttackState;
 
     public State NextState = null;
 
     protected virtual void Start()
     {
-        _myAgent = gameObject.GetComponent<NavMeshAgent>();
+        MyAgent = gameObject.GetComponent<NavMeshAgent>();
         _sm = gameObject.GetComponent<StatesManager>();
     }
 
     protected virtual void Update()
     {
-        if(!isControllingCreature) { return; }
+        if(!isControllingCreature)
+        {
+            if(_isThinking && ThinkState)
+            {
+                ThinkState.OnExit();
+                _isThinking = false;
+            }
+        }
 
         if(ThinkState)
         {
             if(!_isThinking)
             {
                 ThinkState.OnStart();
+                _isThinking = true;
             }
+            ThinkState.OnTick();
         }
 
-        if(_sm.currentState != NextState && NextState)
+        if((_sm.currentState != NextState) && NextState)
         {
             _sm.DoTransition(NextState);
         }
