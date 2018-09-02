@@ -18,7 +18,7 @@ public class playerMoveState : State {
         base.OnTick();
         if(ih.inputVector.magnitude > 0)
         {
-            rb.velocity = owner.GetComponent<UserInput>().inputVector * speed;
+            rb.velocity = ih.inputVector * speed;
             lookAtDir(rb.velocity.normalized);
         }
     }

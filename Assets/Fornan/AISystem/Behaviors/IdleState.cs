@@ -26,6 +26,9 @@ public class IdleState : State {
     {
         base.OnExit();
         //Animator stop idle animation
-        _aim.MyAgent.isStopped = false;
+        if(_aim.MyAgent.isOnNavMesh)
+        {
+            _aim.MyAgent.isStopped = false;
+        }
     }
 }

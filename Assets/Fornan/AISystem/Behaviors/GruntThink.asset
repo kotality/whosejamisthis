@@ -16,10 +16,10 @@ MonoBehaviour:
   states: {fileID: 0}
   rb: {fileID: 0}
   ih: {fileID: 0}
-  AngryState: {fileID: 0}
+  usualDuration: 10
+  AngryState: {fileID: 11400000, guid: a2b1fe57ea18f294392b6d6181101758, type: 2}
   IdleState: {fileID: 11400000, guid: fdc21bd63c0d2274ca33cb7f5d534b62, type: 2}
   PatrolState: {fileID: 11400000, guid: 69859fba69a02b54db5828b90740e8ad, type: 2}
-  maxStateTimer: 10
-  visionProximityRadius: 5
-  visionSightDistance: 20
-  visionCone: 270
+  visionProximityRadius: 7
+  visionSightDistance: 15
+  visionCone: 135

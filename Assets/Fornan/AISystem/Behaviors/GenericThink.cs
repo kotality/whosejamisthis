@@ -28,16 +28,24 @@ public class GenericThink : State {
         if (timeLeftOnState <= 0.0f)
         {
             aim.creatureToBeAngryAt = null;
-            float rng = Random.value;
-            if (rng <= 0.5f)
+
+            if(CanOwnerSee(Player.Self.CurrentPossession))
             {
-                aim.NextState = PatrolState;
+                aim.creatureToBeAngryAt = Player.Self.CurrentPossession;
             }
             else
             {
-                aim.NextState = IdleState;
+                float rng = Random.value;
+                if (rng <= 0.7f)
+                {
+                    aim.NextState = PatrolState;
+                }
+                else
+                {
+                    aim.NextState = IdleState;
+                }
+                timeLeftOnState = Random.Range(1.0f, aim.NextState.usualDuration);
             }
-            timeLeftOnState = Random.Range(1.0f, aim.NextState.usualDuration);
         }
         else if(aim.creatureToBeAngryAt != null)
         {
@@ -59,22 +67,31 @@ public class GenericThink : State {
 
     public override void OnExit()
     {
+        base.OnExit();
         aim.NextState = null;
     }
 
     public virtual bool CanOwnerSee(GameObject other)
     {
-        Vector3 vectorTowardsOther = owner.transform.position - other.transform.position;
+        if(!other) { return false; }
+
+        Vector3 vectorTowardsOther = other.transform.position - owner.transform.position;
         if (vectorTowardsOther.sqrMagnitude <= visionProximityRadius * visionProximityRadius)
         {
             return true;
+        }
+        if(vectorTowardsOther.sqrMagnitude > visionSightDistance * visionSightDistance)
+        {
+            return false;
         }
         if(Vector3.Angle(owner.transform.forward, vectorTowardsOther) > visionCone)
         {
             return false;
         }
-        int hitCount = Physics.RaycastNonAlloc(owner.transform.position, vectorTowardsOther, new RaycastHit[3], visionSightDistance);
-        Debug.Log("Things found in raycast: " + hitCount);
+
+        int hitCount = Physics.RaycastNonAlloc(owner.transform.position, vectorTowardsOther, new RaycastHit[3]);
+        
+        Debug.DrawRay(owner.transform.position, vectorTowardsOther, Color.red, 1.0f);
         if(hitCount <= 2)
         {
             return true;

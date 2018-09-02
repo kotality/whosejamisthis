@@ -8,14 +8,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 920a81d5898d4cd4ea1d9d3879ba690c, type: 3}
-  m_Name: GruntPatrol
+  m_Script: {fileID: 11500000, guid: 6041570d30f29414498e4a62a74e36bf, type: 3}
+  m_Name: GruntAnger
   m_EditorClassIdentifier: 
   Statename: 
   owner: {fileID: 0}
   states: {fileID: 0}
   rb: {fileID: 0}
   ih: {fileID: 0}
-  usualDuration: 20
-  _isActive: 0
-  maximumPatrolPointDistance: 20
+  usualDuration: 2
+  targetPositionRecalculateRange: 1
