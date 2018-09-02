@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 public class TriggerActivator : MonoBehaviour {
-    UnityEvent onEnter;
-    UnityEvent onExit;
+    public UnityEvent onEnter;
+    public UnityEvent onExit;
     public AIManager.CreatureType creatureType;
     private void OnTriggerEnter(Collider other)
     {

@@ -38,6 +38,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4822603088352566}
   - component: {fileID: 65926561906298338}
+  - component: {fileID: 114647411398805100}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -213,3 +214,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.3417687, y: 4.2029643, z: 3.5233784}
   m_Center: {x: -0.07364917, y: 1.6014822, z: 0.025705338}
+--- !u!114 &114647411398805100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1460463711080468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c65819a8c97c164fa38541d14777c0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  creatureType: 0
