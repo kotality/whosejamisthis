@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 33110402996961234}
   - component: {fileID: 23672513006719698}
   m_Layer: 0
-  m_Name: Creature
+  m_Name: Grunt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
