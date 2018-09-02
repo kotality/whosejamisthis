@@ -6,8 +6,8 @@ using UnityEngine.AI;
 public class AIManager : MonoBehaviour {
 
     public NavMeshAgent MyAgent;
+    public DamageEmitter myDamageEmitter;
     protected StatesManager _sm;
-    protected bool _isThinking;
 
     public bool isControllingCreature = true;
 
@@ -19,27 +19,37 @@ public class AIManager : MonoBehaviour {
 
     protected virtual void Start()
     {
-        MyAgent = gameObject.GetComponent<NavMeshAgent>();
+        if(!MyAgent)
+        {
+            Debug.LogError("NavMeshAgent is not hooked up to the AIManager!");
+        }
         _sm = gameObject.GetComponent<StatesManager>();
+        if(ThinkState)
+        {
+            ThinkState.OnExit();
+        }
     }
 
     protected virtual void Update()
     {
         if(!isControllingCreature)
         {
-            if(_isThinking && ThinkState)
+            if(ThinkState)
             {
-                ThinkState.OnExit();
-                _isThinking = false;
+                if(ThinkState.IsStateActive)
+                {
+                    ThinkState.OnExit();
+                }
             }
-        }
 
+            return;
+        }
         if(ThinkState)
         {
-            if(!_isThinking)
+            if(!ThinkState.IsStateActive)
             {
+                ThinkState.owner = gameObject;
                 ThinkState.OnStart();
-                _isThinking = true;
             }
             ThinkState.OnTick();
         }

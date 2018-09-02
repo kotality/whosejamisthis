@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public class PatrolState : State {
 
     public float maximumPatrolPointDistance = 10.0f;
-    protected AIManager _aim;
+    [SerializeField]protected AIManager _aim;
     protected Vector3 currentDestination;
 
     public override void OnStart()

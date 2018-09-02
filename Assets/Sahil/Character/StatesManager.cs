@@ -20,14 +20,18 @@ public class StatesManager : MonoBehaviour {
 
     void Start ()
     {
-        Debug.Log("start");
+        //Debug.Log("start");
         currentState.owner = this.gameObject;
         currentState.OnStart();
 	}
 	
 	void Update ()
     {
-        Debug.Log("Update");
+        //Debug.Log("Update");
+        if(currentState.owner != gameObject)
+        {
+            currentState.owner = gameObject;
+        }
         currentState.OnTick();
 	}
 

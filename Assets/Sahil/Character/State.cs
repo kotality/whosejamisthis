@@ -9,20 +9,31 @@ public class State : ScriptableObject {
     public StatesManager states;
     public Rigidbody rb;
     public UserInput ih;
+    public float usualDuration = 10.0f;
+    protected bool _isActive = false;
+    public bool IsStateActive { get { return _isActive;  } }
 
 
     public virtual void OnStart()
     {
-        Debug.Log("StartBase");
+        //Debug.Log("StartBase");
+        _isActive = true;
         states = owner.GetComponent<StatesManager>();
         rb = owner.GetComponent<Rigidbody>();
-        ih = owner.GetComponent<UserInput>();
+        ih = FindObjectOfType<UserInput>();
     }
     public virtual void OnTick()
     {
     }
     public virtual void OnExit()
     {
+        _isActive = false;
+    }
 
+    
+
+    protected virtual void OnDisable()
+    {
+        OnExit();
     }
 }
