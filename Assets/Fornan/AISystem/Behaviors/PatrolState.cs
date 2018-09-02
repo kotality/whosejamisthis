@@ -4,28 +4,22 @@ using UnityEngine;
 using UnityEngine.AI;
 
 [CreateAssetMenu(menuName = "States/AI/DefaultPatrol")]
-public class PatrolState : State {
+public class PatrolState : AIState
+{
 
     public float maximumPatrolPointDistance = 10.0f;
-    [SerializeField]protected AIManager _aim;
-    protected Vector3 currentDestination;
 
     public override void OnStart()
     {
         base.OnStart();
-        if (!_aim)
-        {
-            _aim = owner.GetComponent<AIManager>();
-        }
     }
 
     public override void OnTick()
     {
-        if(currentDestination != _aim.MyAgent.destination || _aim.MyAgent.remainingDistance < 1.0f)
+        if(myAIManager.MyAgent.remainingDistance < 1.0f)
         {
-            currentDestination = GetRandomPointOnNavMesh();
-            _aim.MyAgent.SetDestination(currentDestination);
-            _aim.MyAgent.isStopped = false;
+            myAIManager.MyAgent.SetDestination(GetRandomPointOnNavMesh());
+            myAIManager.MyAgent.isStopped = false;
         }
     }
 

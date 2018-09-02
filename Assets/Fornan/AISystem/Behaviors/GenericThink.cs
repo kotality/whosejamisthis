@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "States/AI/DefaultThink")]
-public class GenericThink : State {
+public class GenericThink : AIState
+{
 
     //The think state figures out what the next state to do should be based off of stimuli
     public State AngryState;
@@ -14,38 +15,36 @@ public class GenericThink : State {
     public float visionSightDistance = 20.0f;
     public float visionCone = 270.0f;
 
-    protected AIManager aim;
     protected float timeLeftOnState = 0.0f;
 
     public override void OnStart()
     {
         base.OnStart();
-        aim = owner.GetComponent<AIManager>();
     }
 
     public override void OnTick()
     {
         if (CanOwnerSee(Player.Self.CurrentPossession))
         {
-            aim.creatureToBeAngryAt = Player.Self.CurrentPossession;
+            myAIManager.creatureToBeAngryAt = Player.Self.CurrentPossession;
             timeLeftOnState = AngryState.usualDuration;
-            aim.NextState = AngryState;
+            myAIManager.NextState = AngryState;
         }
 
         if (timeLeftOnState <= 0.0f)
         {
-            aim.creatureToBeAngryAt = null;
+            myAIManager.creatureToBeAngryAt = null;
 
             float rng = Random.value;
             if (rng <= 0.7f)
             {
-                aim.NextState = PatrolState;
+                myAIManager.NextState = PatrolState;
             }
             else
             {
-                aim.NextState = IdleState;
+                myAIManager.NextState = IdleState;
             }
-            timeLeftOnState = Random.Range(1.0f, aim.NextState.usualDuration);
+            timeLeftOnState = Random.Range(1.0f, myAIManager.NextState.usualDuration);
         }
         else
         {
@@ -56,9 +55,9 @@ public class GenericThink : State {
     public override void OnExit()
     {
         base.OnExit();
-        if(aim)
+        if(myAIManager)
         {
-            aim.NextState = null;
+            myAIManager.NextState = null;
         }
     }
 

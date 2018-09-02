@@ -7,13 +7,14 @@ public class AIManager : MonoBehaviour {
 
     public NavMeshAgent MyAgent;
     public DamageEmitter myDamageEmitter;
-    protected StatesManager _sm;
+    protected AIStatesManager _sm;
 
     public bool isControllingCreature = true;
+    protected bool _isThinking = false;
 
     public GameObject creatureToBeAngryAt = null;
 
-    public State ThinkState;
+    public AIState ThinkState;
 
     public State NextState = null;
 
@@ -23,11 +24,8 @@ public class AIManager : MonoBehaviour {
         {
             Debug.LogError("NavMeshAgent is not hooked up to the AIManager!");
         }
-        _sm = gameObject.GetComponent<StatesManager>();
-        if(ThinkState)
-        {
-            ThinkState.OnExit();
-        }
+        _sm = gameObject.GetComponent<AIStatesManager>();
+        _sm.myAIManager = this;
     }
 
     protected virtual void Update()
@@ -36,9 +34,10 @@ public class AIManager : MonoBehaviour {
         {
             if(ThinkState)
             {
-                if(ThinkState.IsStateActive)
+                if(_isThinking)
                 {
                     ThinkState.OnExit();
+                    _isThinking = false;
                 }
             }
 
@@ -46,11 +45,14 @@ public class AIManager : MonoBehaviour {
         }
         if(ThinkState)
         {
-            if(!ThinkState.IsStateActive)
+            if(!_isThinking)
             {
                 ThinkState.owner = gameObject;
                 ThinkState.OnStart();
+                _isThinking = true;
             }
+            ThinkState.owner = gameObject;
+            ThinkState.myAIManager = this;
             ThinkState.OnTick();
         }
 

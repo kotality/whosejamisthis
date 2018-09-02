@@ -9,7 +9,7 @@ public class StatesManager : MonoBehaviour {
     //public Hashtable<State> stateVault;
     public Hashtable stateVault;
 
-    void Awake()
+    protected virtual void Awake()
     {
       foreach(State s in statesKeep)
         {
@@ -18,14 +18,14 @@ public class StatesManager : MonoBehaviour {
         }      
     }
 
-    void Start ()
+    protected virtual void Start ()
     {
         //Debug.Log("start");
         currentState.owner = this.gameObject;
         currentState.OnStart();
 	}
 	
-	void Update ()
+	protected virtual void Update ()
     {
         //Debug.Log("Update");
         if(currentState.owner != gameObject)
@@ -35,7 +35,7 @@ public class StatesManager : MonoBehaviour {
         currentState.OnTick();
 	}
 
-    public void DoTransition(State state)
+    public virtual void DoTransition(State state)
     {
         state.owner = this.gameObject;
         this.currentState.OnExit();

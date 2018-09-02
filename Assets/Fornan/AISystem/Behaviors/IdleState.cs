@@ -3,18 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "States/AI/DefaultIdle")]
-public class IdleState : State {
-
-    protected AIManager _aim;
+public class IdleState : AIState {
 
     public override void OnStart()
     {
         base.OnStart();
-        if(!_aim)
-        {
-            _aim = owner.GetComponent<AIManager>();
-        }
-        _aim.MyAgent.isStopped = true;
+        myAIManager.MyAgent.isStopped = true;
     }
 
     public override void OnTick()
@@ -26,13 +20,13 @@ public class IdleState : State {
     {
         base.OnExit();
         //Animator stop idle animation
-        if(_aim)
+        if(myAIManager)
         {
-            if(_aim.MyAgent)
+            if(myAIManager.MyAgent)
             {
-                if (_aim.MyAgent.isOnNavMesh)
+                if (myAIManager.MyAgent.isOnNavMesh)
                 {
-                    _aim.MyAgent.isStopped = false;
+                    myAIManager.MyAgent.isStopped = false;
                 }
             }
         }
