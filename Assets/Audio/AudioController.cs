@@ -22,6 +22,12 @@ public class AudioController : MonoBehaviour {
 	}
 
 	public void Play(int clipPosition=0){
+		if (audioSrc.isPlaying) {
+			if (waitToFinish) {
+				return;
+			} else{
+			}
+		}
 		//Clip Position: If Random Clip is disabled you can chose the clip you want to play with AudioController.Play(clipPosition);
 		//If invalid clip position is selected, clip at position 0 will be used
 		if(clipPosition<audioClp.Length && clipPosition>=0){
@@ -31,13 +37,7 @@ public class AudioController : MonoBehaviour {
 			Debug.Log("Audio Clip not found/not existing. Used Default one instead!");
 		}
 
-		if (audioSrc.isPlaying) {
-			if (waitToFinish) {
-				return;
-			} else {
-			
-			}
-		}
+		
 		if (audioSrc.pitch != 1) {
 			audioSrc.pitch = 1f;
 		}
@@ -52,19 +52,26 @@ public class AudioController : MonoBehaviour {
 				clipRandomizer ();
 			}
 		}
-		audioSrc.Play();
+		if(!audioSrc.isPlaying){
+			audioSrc.Play();
+		}
 
 	}
-
 	public void Stop(){
 		audioSrc.Stop();
 	}
 
-	public void changeClip(int a){
+	public void changeClip(int a, bool startPlaying=false){
+		if(audioSrc.isPlaying){
+			audioSrc.Stop();
+		}
 		if (a < audioClp.Length) {
 			audioSrc.clip = audioClp [a];
 		} else {
 			Debug.Log ("Tried to load audioclip, that does not exist. Check your changeClip() calls.");
+		}
+		if(startPlaying){
+			audioSrc.Play();
 		}
 	}
 
