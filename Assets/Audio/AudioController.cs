@@ -13,14 +13,18 @@ public class AudioController : MonoBehaviour {
 	public float RandomPitchRange = 0.05f;
 	public bool waitToFinish;
 	
+	
 	void Start(){
 		audioSrc = GetComponent<AudioSource>();
 		audioSrc.clip = audioClp[0];
 		if (playOnStart) {
-			Play ();
+			StartCoroutine(waiter());
 		}
 	}
-
+	IEnumerator waiter(){
+		yield return new WaitForSeconds(Random.Range(0,6));
+		Play ();
+	}
 	public void Play(int clipPosition=0){
 		if (audioSrc.isPlaying) {
 			if (waitToFinish) {
