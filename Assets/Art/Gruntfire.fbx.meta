@@ -29,6 +29,8 @@ ModelImporter:
     100046: Thumb.L_end
     100048: Thumb.R
     100050: Thumb.R_end
+    100052: Armature.001
+    100054: Cube.001
     400000: Armature
     400002: Arn.L
     400004: Arn.R
@@ -55,10 +57,20 @@ ModelImporter:
     400046: Thumb.L_end
     400048: Thumb.R
     400050: Thumb.R_end
+    400052: Armature.001
+    400054: Cube.001
     2100000: Material
+    2100002: Material.001
     4300000: Cube
+    4300002: Cube.001
+    7400000: Armature.001|attackgrunt
+    7400002: Armature.001|idle
+    7400004: Armature.001|jumpgruntice
+    7400006: Armature.001|spitgruntfire
+    7400008: Armature.001|walk
     9500000: //RootNode
     13700000: Cube
+    13700002: Cube.001
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
@@ -120,7 +132,7 @@ ModelImporter:
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1

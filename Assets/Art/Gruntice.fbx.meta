@@ -24,6 +24,8 @@ ModelImporter:
     100036: Thumb.L_end
     100038: Thumb.R
     100040: Thumb.R_end
+    100042: Armature.002
+    100044: Cube.002
     400000: Armature
     400002: Arn.L
     400004: Arn.R
@@ -45,10 +47,19 @@ ModelImporter:
     400036: Thumb.L_end
     400038: Thumb.R
     400040: Thumb.R_end
+    400042: Armature.002
+    400044: Cube.002
     2100000: Material
+    2100002: Material.002
     4300000: Cube
+    4300002: Cube.002
+    7400000: Armature.002|attackgrunt
+    7400002: Armature.002|idle
+    7400004: Armature.002|jumpgruntice
+    7400006: Armature.002|walk
     9500000: //RootNode
     13700000: Cube
+    13700002: Cube.002
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
