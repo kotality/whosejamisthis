@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "States/AI/DefaultIdle")]
 public class IdleState : State {
 
     protected AIManager _aim;

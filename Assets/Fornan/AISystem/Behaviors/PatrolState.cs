@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+[CreateAssetMenu(menuName = "States/AI/DefaultPatrol")]
 public class PatrolState : State {
 
     public float maximumPatrolPointDistance = 10.0f;

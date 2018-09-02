@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "States/AI/DefaultThink")]
 public class GenericThink : State {
 
     //The think state figures out what the next state to do should be based off of stimuli
