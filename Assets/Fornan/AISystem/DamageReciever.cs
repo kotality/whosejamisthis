@@ -34,12 +34,25 @@ public class DamageReciever : MonoBehaviour {
         if(killer.owner == Player.Self.CurrentPossession)
         {
             //The player killed this creature. The player now becomes this creature.
-            Player.Self.SetPossessionAs(killer.owner);
+            Player.Self.SetPossessionAs(gameObject);
             currentHealth = maxHealth;
         }
         else
         {
-            //The player is the one dying.
+            if(gameObject == Player.Self.CurrentPossession)
+            {
+                if(Player.Self.CrownPrefab)
+                {
+                    GameObject crown = Instantiate(Player.Self.CrownPrefab, transform.position, transform.rotation);
+                    crown.AddComponent<Rigidbody>();
+                    MeshCollider mc = crown.AddComponent<MeshCollider>();
+                    mc.convex = true;
+
+                    Player.Self.GameOver();
+                }
+            }
+            gameObject.SetActive(false);
+            ignoreDamage = true;
         }
     }
 

@@ -17,6 +17,11 @@ public class AngerState : AIState
     {
         if(!myAIManager.myDamageEmitter) { return; }
 
+        if(!myAIManager.creatureToBeAngryAt)
+        {
+            myAIManager.creatureToBeAngryAt = Player.Self.CurrentPossession;
+        }
+
         if(myAIManager.myDamageEmitter.WithinRangeOf(myAIManager.creatureToBeAngryAt.transform.position) || Vector3.Distance(owner.transform.position, myAIManager.creatureToBeAngryAt.transform.position) < targetPositionRecalculateRange)
         {
             myAIManager.MyAgent.isStopped = true;

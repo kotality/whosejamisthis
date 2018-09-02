@@ -8,6 +8,7 @@ public class AIManager : MonoBehaviour {
     public NavMeshAgent MyAgent;
     public DamageEmitter myDamageEmitter;
     public Animator myAnimator;
+    public Transform crownSpawnLocation;
     protected AIStatesManager _sm;
     protected Rigidbody _rb;
 

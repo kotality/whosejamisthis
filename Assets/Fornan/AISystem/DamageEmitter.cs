@@ -69,9 +69,15 @@ public class DamageEmitter : MonoBehaviour {
 
     public virtual bool WithinRangeOf(Vector3 targetLocation)
     {
-        foreach(Collider c in _intersectingColliders)
+        for(int i = 0; i < _intersectingColliders.Count; i++)
         {
-            if(c.bounds.Contains(targetLocation))
+            Collider c = _intersectingColliders[i];
+            if(!c)
+            {
+                _intersectingColliders.Remove(c);
+                i--;
+            }
+            else if(c.bounds.Contains(targetLocation))
             {
                 return true;
             }
@@ -81,23 +87,34 @@ public class DamageEmitter : MonoBehaviour {
 
     public virtual void ApplyDamage()
     {
-        //if (_damageRecipient)
-        //{
-        //    //Damage anything
-        //}
-        //else
-        //{
-        //    //Damage only recipient
-        //}
-
-        foreach(Collider c in _intersectingColliders)
+        for(int i = 0; i < _intersectingColliders.Count; i++)
         {
-            DamageReciever dr = c.GetComponent<DamageReciever>();
-            if(dr)
+            Collider c = _intersectingColliders[i];
+            if(!c)
             {
-                dr.TakeDamageFrom(this);
+                _intersectingColliders.Remove(c);
+                i--;
+            }
+            else
+            {
+                DamageReciever dr = c.GetComponent<DamageReciever>();
+                if (dr)
+                {
+                    if (_damageRecipient)
+                    {
+                        if (_damageRecipient == c.gameObject)
+                        {
+                            dr.TakeDamageFrom(this);
+                        }
+                    }
+                    else
+                    {
+                        dr.TakeDamageFrom(this);
+                    }
+                }
             }
         }
+
         SetFreezePosition(false);
         currentlyAttacking = false;
     }
@@ -106,7 +123,7 @@ public class DamageEmitter : MonoBehaviour {
     {
         if(other)
         {
-            if(!_intersectingColliders.Contains(other))
+            if(!_intersectingColliders.Contains(other) && (other.gameObject != owner))
             {
                 _intersectingColliders.Add(other);
             }
