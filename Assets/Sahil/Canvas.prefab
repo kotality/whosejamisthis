@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114276075705550144}
   - component: {fileID: 114217915425371834}
   m_Layer: 0
-  m_Name: HealthBar
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

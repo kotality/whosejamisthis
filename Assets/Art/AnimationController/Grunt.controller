@@ -157,7 +157,11 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Armature|attackgrunt
+<<<<<<< HEAD
   m_Speed: 5
+=======
+  m_Speed: 3
+>>>>>>> 45286f2d8c633360884d4da45aeebce4baf5d80d
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101053155741466478}
@@ -183,7 +187,11 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Armature|idle
+<<<<<<< HEAD
   m_Speed: 5
+=======
+  m_Speed: 3
+>>>>>>> 45286f2d8c633360884d4da45aeebce4baf5d80d
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101030664688078748}
@@ -210,7 +218,11 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Armature|walk
+<<<<<<< HEAD
   m_Speed: 10
+=======
+  m_Speed: 3
+>>>>>>> 45286f2d8c633360884d4da45aeebce4baf5d80d
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101309460666847904}

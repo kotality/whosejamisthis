@@ -98,6 +98,6 @@ public class Player : MonoBehaviour {
         }
 
         Debug.Log("Game Ends");
-        //SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0);
     }
 }

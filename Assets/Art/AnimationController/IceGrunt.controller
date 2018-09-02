@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: FireGrunt
+  m_Name: IceGrunt
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Attack
@@ -157,11 +157,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Armature|attackgrunt
-<<<<<<< HEAD
-  m_Speed: 5
-=======
-  m_Speed: 3
->>>>>>> 45286f2d8c633360884d4da45aeebce4baf5d80d
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101053155741466478}
@@ -174,7 +170,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400006, guid: 89157294acc07464e984ed789573ca00, type: 3}
+  m_Motion: {fileID: 7400000, guid: b9cfb6ecfaf92a74392987721ebf389d, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -187,11 +183,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Armature|idle
-<<<<<<< HEAD
-  m_Speed: 5
-=======
-  m_Speed: 3
->>>>>>> 45286f2d8c633360884d4da45aeebce4baf5d80d
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101030664688078748}
@@ -205,7 +197,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400002, guid: 89157294acc07464e984ed789573ca00, type: 3}
+  m_Motion: {fileID: 7400002, guid: b9cfb6ecfaf92a74392987721ebf389d, type: 3}
   m_Tag: 
   m_SpeedParameter: MovementSpeed
   m_MirrorParameter: 
@@ -218,11 +210,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Armature|walk
-<<<<<<< HEAD
-  m_Speed: 5
-=======
-  m_Speed: 3
->>>>>>> 45286f2d8c633360884d4da45aeebce4baf5d80d
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101309460666847904}
@@ -236,7 +224,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400008, guid: 89157294acc07464e984ed789573ca00, type: 3}
+  m_Motion: {fileID: 7400006, guid: b9cfb6ecfaf92a74392987721ebf389d, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
