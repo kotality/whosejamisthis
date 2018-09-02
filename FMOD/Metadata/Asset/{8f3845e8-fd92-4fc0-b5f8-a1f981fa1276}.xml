@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EncodableAsset" id="{8f3845e8-fd92-4fc0-b5f8-a1f981fa1276}">
+        <property name="assetPath">
+            <value>Char/Grunt/Grunt_Idle/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{b81a0e91-393d-453d-8486-d6f4af787a48}</destination>
+        </relationship>
+    </object>
+</objects>
