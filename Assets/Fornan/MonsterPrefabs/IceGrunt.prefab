@@ -822,7 +822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20415c73707fba5468d90c2c2f807178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 2
   myDamageType: 2
   doFreezeColliderOnAttack: 0
   owner: {fileID: 1722435015971502}
