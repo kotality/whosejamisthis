@@ -7,14 +7,13 @@ public class CameraController : MonoBehaviour {
 
     public Transform target;
     public Vector3 offSet = Vector3.zero;
-    Camera maincam;
 
     //Do Not Modify 
     Vector3 currentVel;
 
 	// Use this for initialization
 	void Start () {
-        maincam = Camera.main;	
+
 	}
 	
 	// Update is called once per frame
