@@ -30,7 +30,8 @@ public class PatrolState : State {
 
     protected virtual Vector3 GetRandomPointOnNavMesh()
     {
-        Vector3 position = owner.transform.position + (Random.insideUnitSphere * maximumPatrolPointDistance);
+        Vector2 randomPoint = Random.insideUnitCircle * maximumPatrolPointDistance;
+        Vector3 position = owner.transform.position + new Vector3(randomPoint.x, 0.0f, randomPoint.y);
         NavMeshHit hit;
         if(NavMesh.SamplePosition(position, out hit, maximumPatrolPointDistance, NavMesh.AllAreas))
         {
