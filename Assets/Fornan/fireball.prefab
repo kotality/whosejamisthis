@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LifeTime: 4
-  Velocity: 10
+  Velocity: 100
   de: {fileID: 0}
   rb: {fileID: 54081173377820318}
 --- !u!135 &135052574609084772
