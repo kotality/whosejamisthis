@@ -21,6 +21,7 @@ public class AIManager : MonoBehaviour {
     {
         MyAgent = gameObject.GetComponent<NavMeshAgent>();
         _sm = gameObject.GetComponent<StatesManager>();
+
     }
 
     protected virtual void Update()
@@ -38,6 +39,7 @@ public class AIManager : MonoBehaviour {
         {
             if(!_isThinking)
             {
+                ThinkState.owner = gameObject;
                 ThinkState.OnStart();
                 _isThinking = true;
             }

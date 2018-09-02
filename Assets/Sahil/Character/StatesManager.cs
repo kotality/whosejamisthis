@@ -28,6 +28,10 @@ public class StatesManager : MonoBehaviour {
 	void Update ()
     {
         Debug.Log("Update");
+        if(currentState.owner != gameObject)
+        {
+            currentState.owner = gameObject;
+        }
         currentState.OnTick();
 	}
 

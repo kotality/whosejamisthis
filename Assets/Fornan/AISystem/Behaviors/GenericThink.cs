@@ -10,8 +10,6 @@ public class GenericThink : State {
     public State IdleState;
     public State PatrolState;
 
-    public float maxStateTimer = 10.0f;
-
     public float visionProximityRadius = 5.0f;
     public float visionSightDistance = 20.0f;
     public float visionCone = 270.0f;
@@ -39,14 +37,14 @@ public class GenericThink : State {
             {
                 aim.NextState = IdleState;
             }
-            timeLeftOnState = Random.Range(1.0f, maxStateTimer);
+            timeLeftOnState = Random.Range(1.0f, aim.NextState.usualDuration);
         }
         else if(aim.creatureToBeAngryAt != null)
         {
             aim.NextState = AngryState;
             if(CanOwnerSee(aim.creatureToBeAngryAt))
             {
-                timeLeftOnState = maxStateTimer;
+                timeLeftOnState = AngryState.usualDuration;
             }
             else
             {

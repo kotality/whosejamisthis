@@ -9,6 +9,7 @@ public class State : ScriptableObject {
     public StatesManager states;
     public Rigidbody rb;
     public UserInput ih;
+    public float usualDuration = 10.0f;
 
 
     public virtual void OnStart()
