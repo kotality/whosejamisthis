@@ -23,9 +23,16 @@ MonoBehaviour:
   - {fileID: 114012003286902770}
   - {fileID: 114412933739655324}
   - {fileID: 114106597798570740}
+  - {fileID: 114842905059852772}
+  - {fileID: 114077074492562664}
+  - {fileID: 114721171760254668}
+  - {fileID: 114206628880521606}
+  - {fileID: 114830024148938702}
+  - {fileID: 114825879695357496}
+  - {fileID: 114324000187941780}
   MasterBankRef: {fileID: 114227458720588318}
   StringsBankRef: {fileID: 114882360508206484}
-  stringsBankWriteTime: 636714378798916111
+  stringsBankWriteTime: 636714903659756990
   cacheVersion: 2
 --- !u!114 &114012003286902770
 MonoBehaviour:
@@ -40,6 +47,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Char/Footsteps_Fire
   guid: c26b54ad8310d14f998c46fd9ef672c7
+  Banks:
+  - {fileID: 114106613746731394}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 4
+  Length: 0
+--- !u!114 &114077074492562664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Char/Swapping
+  guid: 70c84b7808d43544b86cd3116fbcff05
   Banks:
   - {fileID: 114106613746731394}
   IsStream: 0
@@ -86,8 +115,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 7.4
   Length: 5000
 --- !u!114 &114106613746731394
 MonoBehaviour:
@@ -101,11 +130,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\Users\cryin\Documents\GitHub\whosejamisthis\FMOD\Build\Desktop\Character.bank
-  lastModified: 636714378803408341
+  lastModified: 636714903661897216
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 885280
+    Value: 1061344
   Exists: 1
 --- !u!114 &114204206122945710
 MonoBehaviour:
@@ -126,9 +155,31 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters: []
+  MinDistance: 0
+  MaxDistance: 7.2000003
+  Length: 17540
+--- !u!114 &114206628880521606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Char/Char_Hit
+  guid: eda829c5c3e3254a9c123895ec0a8ebc
+  Banks:
+  - {fileID: 114106613746731394}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 17540
+  Length: 0
 --- !u!114 &114212856464669238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,12 +210,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\Users\cryin\Documents\GitHub\whosejamisthis\FMOD\Build\Desktop\Master Bank.bank
-  lastModified: 636714378798896177
+  lastModified: 636714903659727075
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 12474
   Exists: 1
+--- !u!114 &114324000187941780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Env/Torch_Burning
+  guid: ad8982e5567d7543a0c22c1670a9241b
+  Banks:
+  - {fileID: 114532520921152296}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 6
+  Length: 17540
 --- !u!114 &114337304416856248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,12 +250,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\Users\cryin\Documents\GitHub\whosejamisthis\FMOD\Build\Desktop\Music.bank
-  lastModified: 636714378803438259
+  lastModified: 636714903662905310
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 450
   Exists: 1
+--- !u!114 &114348104891164256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Angry
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114389172398901676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,10 +307,26 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  Parameters:
+  - {fileID: 114348104891164256}
+  MinDistance: 0
+  MaxDistance: 7.4
   Length: 20000
+--- !u!114 &114439378396078704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Angry
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114532520921152296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,12 +339,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\Users\cryin\Documents\GitHub\whosejamisthis\FMOD\Build\Desktop\Environment.bank
-  lastModified: 636714378799145492
+  lastModified: 636714903662854978
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 80448
+    Value: 1473120
   Exists: 1
+--- !u!114 &114721171760254668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Char/Footsteps_Grunt
+  guid: e9eabc4bdedf444a8d2e535954d19c91
+  Banks:
+  - {fileID: 114106613746731394}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 4
+  Length: 500
 --- !u!114 &114732873799192168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,6 +403,72 @@ MonoBehaviour:
   - Name: Desktop
     Value: 80448
   Exists: 1
+--- !u!114 &114825879695357496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Env/Door_Burning
+  guid: 3114ba00d374fd4082db762bb7841e4b
+  Banks:
+  - {fileID: 114532520921152296}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0.29999998
+  MaxDistance: 6
+  Length: 4000
+--- !u!114 &114830024148938702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Env/Pressure_Plate
+  guid: 22fd99ee78b86141bd2303228aeea89b
+  Banks:
+  - {fileID: 114532520921152296}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7.8
+  Length: 0
+--- !u!114 &114842905059852772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Char/Footsteps_Ice
+  guid: 56babb49b70fcc4481a968bc8bc936b3
+  Banks:
+  - {fileID: 114106613746731394}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 4
+  Length: 0
 --- !u!114 &114882360508206484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,11 +481,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636714378798916111
+  lastModified: 636714903659756990
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1062
+    Value: 1366
   Exists: 1
 --- !u!114 &114885327084630842
 MonoBehaviour:
