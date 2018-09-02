@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114550478291639792}
   - component: {fileID: 82173447674942776}
   m_Layer: 0
-  m_Name: Doorburning_Env_Sound
+  m_Name: StonePlate_Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,7 +53,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.664
+  m_Volume: 0.701
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClp:
-  - {fileID: 8300000, guid: 330e49b5c5b5f40429a1d37360821913, type: 3}
+  - {fileID: 8300000, guid: 52ed636fdfd349542bff78e24e5a8841, type: 3}
   RandomClip: 0
   playOnStart: 0
   RandomPitch: 1
