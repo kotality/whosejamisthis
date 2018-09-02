@@ -11,6 +11,14 @@ public class AIManager : MonoBehaviour {
     protected AIStatesManager _sm;
     protected Rigidbody _rb;
 
+    public enum CreatureType
+    {
+        NORMAL,
+        FIRE,
+        ICE
+    }
+    public CreatureType myDamageType = CreatureType.NORMAL;
+
     public bool isControllingCreature = true;
     protected bool _isThinking = false;
 
