@@ -8,7 +8,13 @@ public class IdleState : AIState {
     public override void OnStart()
     {
         base.OnStart();
-        myAIManager.MyAgent.isStopped = true;
+        if (myAIManager)
+        {
+            if (myAIManager.MyAgent)
+            {
+                myAIManager.MyAgent.isStopped = true;
+            }
+        }
     }
 
     public override void OnTick()

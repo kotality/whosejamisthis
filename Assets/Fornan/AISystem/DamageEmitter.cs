@@ -18,7 +18,7 @@ public class DamageEmitter : MonoBehaviour {
 
     protected Animator _anim;
 
-    protected List<Collider> _intersectingColliders = new List<Collider>();
+    [SerializeField]protected List<Collider> _intersectingColliders = new List<Collider>();
     protected Vector3 initialLocalPosition;
     protected Quaternion initialLocalRotation;
     protected Vector3 frozenPosition;
@@ -36,21 +36,32 @@ public class DamageEmitter : MonoBehaviour {
             transform.position = frozenPosition;
             transform.rotation = frozenRotation;
         }
-        if(attackCoolDownRemaining > 0.0f && !currentlyAttacking)
+    }
+
+    protected virtual void Start()
+    {
+        if(!owner) { return; }
+        AIManager aim = owner.GetComponent<AIManager>();
+        if(aim)
         {
-            attackCoolDownRemaining -= Time.deltaTime;
+            _anim = aim.myAnimator;
         }
     }
 
     //UseAttack triggers an animation. The animation has an Animation Event that calls ApplyDamage on this object at the right time to actually apply damage.
     public virtual void UseAttack(GameObject recipient)
     {
-        if(attackCoolDownRemaining > 0.0f) { return; }
+        if(currentlyAttacking) { return; }
         if(doFreezeColliderOnAttack)
         {
             SetFreezePosition(true);
         }
-        //trigger attack anim
+        
+        if(_anim)
+        {
+            _anim.SetTrigger("Attack");
+        }
+
         currentlyAttacking = true;
         Debug.Log("Attacking!");
         _damageRecipient = recipient;
@@ -84,7 +95,7 @@ public class DamageEmitter : MonoBehaviour {
             DamageReciever dr = c.GetComponent<DamageReciever>();
             if(dr)
             {
-              dr.TakeDamageFrom(this);
+                dr.TakeDamageFrom(this);
             }
         }
         SetFreezePosition(false);

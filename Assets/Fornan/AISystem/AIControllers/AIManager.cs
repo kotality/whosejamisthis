@@ -7,7 +7,9 @@ public class AIManager : MonoBehaviour {
 
     public NavMeshAgent MyAgent;
     public DamageEmitter myDamageEmitter;
+    public Animator myAnimator;
     protected AIStatesManager _sm;
+    protected Rigidbody _rb;
 
     public bool isControllingCreature = true;
     protected bool _isThinking = false;
@@ -26,10 +28,23 @@ public class AIManager : MonoBehaviour {
         }
         _sm = gameObject.GetComponent<AIStatesManager>();
         _sm.myAIManager = this;
+        _rb = gameObject.GetComponent<Rigidbody>();
     }
 
     protected virtual void Update()
     {
+        if(myAnimator)
+        {
+            if (isControllingCreature)
+            {
+                myAnimator.SetFloat("MovementSpeed", MyAgent.velocity.sqrMagnitude);
+            }
+            else
+            {
+                myAnimator.SetFloat("MovementSpeed", _rb.velocity.sqrMagnitude);
+            }
+        }
+
         if(!isControllingCreature)
         {
             if(ThinkState)
