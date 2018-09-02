@@ -9,7 +9,7 @@ public class TriggerActivator : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         if(other.GetComponent<AIManager>() != null) { 
-        if (!other.GetComponent<AIManager>().isControllingCreature)
+        if (other.gameObject == Player.Self.CurrentPossession)
         {
                 if (other.GetComponent<AIManager>().myDamageType == creatureType)
                 {
@@ -21,8 +21,9 @@ public class TriggerActivator : MonoBehaviour {
     private void OnTriggerExit(Collider other)
     {
         if(other.GetComponent<AIManager>() != null) {
-            if (!other.GetComponent<AIManager>().isControllingCreature)
+            if (other.gameObject == Player.Self.CurrentPossession)
             {
+                
                 if (other.GetComponent<AIManager>().myDamageType == creatureType)
                 {
                     onExit.Invoke();
