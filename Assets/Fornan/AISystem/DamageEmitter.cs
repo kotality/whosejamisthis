@@ -146,6 +146,8 @@ public class DamageEmitter : MonoBehaviour {
             {
                 initialLocalPosition = transform.localPosition;
                 initialLocalRotation = transform.localRotation;
+                frozenPosition = transform.position;
+                frozenRotation = transform.rotation;
                 freezePosition = true;
             }
             else
