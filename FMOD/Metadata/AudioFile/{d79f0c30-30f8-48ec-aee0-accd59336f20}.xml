@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{d79f0c30-30f8-48ec-aee0-accd59336f20}">
         <property name="assetPath">
-            <value>Char/Ice_Idle/Ice_Idle_-007.wav</value>
+            <value>Char/Ice/Ice_Idle/Ice_Idle_-007.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>44.0999985</value>

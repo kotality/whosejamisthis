@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{615fb97d-c034-4f29-a9f1-8f1792b72b61}">
         <property name="assetPath">
-            <value>Char/Grint_Idle/Grunt_Idle_-003.wav</value>
+            <value>Char/Grunt/Grunt_Idle/Grunt_Idle_-003.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>44.0999985</value>

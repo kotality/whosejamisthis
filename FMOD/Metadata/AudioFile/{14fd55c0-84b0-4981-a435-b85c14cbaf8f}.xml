@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{14fd55c0-84b0-4981-a435-b85c14cbaf8f}">
         <property name="assetPath">
-            <value>Char/Fire_Idle/Fire_Idle_-007.wav</value>
+            <value>Char/Fire/Fire_Idle/Fire_Idle_-007.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>44.0999985</value>
