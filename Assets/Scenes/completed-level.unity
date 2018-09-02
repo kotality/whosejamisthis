@@ -17995,6 +17995,16 @@ Prefab:
       propertyPath: m_Name
       value: Grunt (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 114593114172647424, guid: bd0f4113473825245a2b0e79b502b5f8,
+        type: 2}
+      propertyPath: maxHealth
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114593114172647424, guid: bd0f4113473825245a2b0e79b502b5f8,
+        type: 2}
+      propertyPath: currentHealth
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd0f4113473825245a2b0e79b502b5f8, type: 2}
   m_IsPrefabAsset: 0
