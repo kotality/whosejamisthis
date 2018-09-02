@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000003DC091C8 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000000047EEA068 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -24,6 +24,330 @@
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-003', format=2, channels=2, frequency=48000, lengthbytes=3232, lengthpcm=15148, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.205558.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-015', format=2, channels=2, frequency=48000, lengthbytes=3360, lengthpcm=16383, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.063680.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-010', format=2, channels=2, frequency=48000, lengthbytes=3072, lengthpcm=14133, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.075951.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-013', format=2, channels=2, frequency=48000, lengthbytes=5856, lengthpcm=23404, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.065844.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-008', format=2, channels=2, frequency=48000, lengthbytes=3136, lengthpcm=15085, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.132418.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-017', format=2, channels=2, frequency=48000, lengthbytes=3776, lengthpcm=16967, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.070197.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-007', format=2, channels=2, frequency=48000, lengthbytes=3712, lengthpcm=17191, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.199627.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-004', format=2, channels=2, frequency=48000, lengthbytes=3264, lengthpcm=15082, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.078313.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-014', format=2, channels=2, frequency=48000, lengthbytes=6176, lengthpcm=27500, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.090043.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-016', format=2, channels=2, frequency=48000, lengthbytes=3840, lengthpcm=18138, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.115508.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-011', format=2, channels=2, frequency=48000, lengthbytes=2944, lengthpcm=11724, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.051367.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-002', format=2, channels=2, frequency=48000, lengthbytes=3232, lengthpcm=12968, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.076778.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-001', format=2, channels=2, frequency=48000, lengthbytes=5696, lengthpcm=23710, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.192518.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-006', format=2, channels=2, frequency=48000, lengthbytes=2816, lengthpcm=13664, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.088313.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-009', format=2, channels=2, frequency=48000, lengthbytes=5856, lengthpcm=26517, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.088619.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-012', format=2, channels=2, frequency=48000, lengthbytes=4544, lengthpcm=19308, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.045467.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-018', format=2, channels=2, frequency=48000, lengthbytes=3840, lengthpcm=18138, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.111639.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1461376
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11744
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004F34F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8324BDA20
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8324BD9F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8324BDAF0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8324BDBB0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000047ED7B38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Waterdrops_Env-005', format=2, channels=2, frequency=48000, lengthbytes=3360, lengthpcm=14735, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.078351.
+[LOG] SoundI::release                          :  (000000003CA93638)
+[LOG] SoundI::release                          :     Waterdrops_Env-001 (000000003FDA9CC8)
+[LOG] SoundI::release                          :  (000000003CA931E8)
+[LOG] SoundI::release                          :     Waterdrops_Env-002 (000000003FDA9168)
+[LOG] SoundI::release                          :  (000000003CA93ED8)
+[LOG] SoundI::release                          :     Waterdrops_Env-003 (000000003FDA8128)
+[LOG] SoundI::release                          :  (000000003CA948E8)
+[LOG] SoundI::release                          :     Waterdrops_Env-004 (000000003FDA60A8)
+[LOG] SoundI::release                          :  (000000003CA937A8)
+[LOG] SoundI::release                          :     Waterdrops_Env-005 (000000003FDA8AE8)
+[LOG] SoundI::release                          :  (000000003CA94A58)
+[LOG] SoundI::release                          :     Waterdrops_Env-006 (000000003FDA7428)
+[LOG] SoundI::release                          :  (000000003CA93918)
+[LOG] SoundI::release                          :     Waterdrops_Env-007 (000000003FDA8608)
+[LOG] SoundI::release                          :  (000000003CA94EA8)
+[LOG] SoundI::release                          :     Waterdrops_Env-008 (000000003FDA97E8)
+[LOG] SoundI::release                          :  (000000003CA94048)
+[LOG] SoundI::release                          :     Waterdrops_Env-009 (000000003FDA75C8)
+[LOG] SoundI::release                          :  (000000003CA93BF8)
+[LOG] SoundI::release                          :     Waterdrops_Env-010 (000000003FDA7768)
+[LOG] SoundI::release                          :  (000000003CA93358)
+[LOG] SoundI::release                          :     Waterdrops_Env-011 (000000003FDA87A8)
+[LOG] SoundI::release                          :  (000000003CA941B8)
+[LOG] SoundI::release                          :     Waterdrops_Env-012 (000000003FDA6A68)
+[LOG] SoundI::release                          :  (000000003CA94778)
+[LOG] SoundI::release                          :     Waterdrops_Env-013 (000000003FDA7288)
+[LOG] SoundI::release                          :  (000000003CA93D68)
+[LOG] SoundI::release                          :     Waterdrops_Env-014 (000000003FDA7C48)
+[LOG] SoundI::release                          :  (000000003CA934C8)
+[LOG] SoundI::release                          :     Waterdrops_Env-015 (000000003FDA9988)
+[LOG] SoundI::release                          :  (000000003CA93078)
+[LOG] SoundI::release                          :     Waterdrops_Env-016 (000000003FDA8948)
+[LOG] SoundI::release                          :  (000000003CA94328)
+[LOG] SoundI::release                          :     Waterdrops_Env-017 (000000003FDA8E28)
+[LOG] SoundI::release                          :  (000000003CA94498)
+[LOG] SoundI::release                          :     Waterdrops_Env-018 (000000003FDA6DA8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
