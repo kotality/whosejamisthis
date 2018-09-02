@@ -35,7 +35,7 @@ public class DamageReciever : MonoBehaviour {
         {
             //The player killed this creature. The player now becomes this creature.
             Player.Self.SetPossessionAs(gameObject);
-            currentHealth = maxHealth;
+            currentHealth = maxHealth * 3;
         }
         else
         {
