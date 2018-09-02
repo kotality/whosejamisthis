@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class DamageReciever : MonoBehaviour {
 
+    //If you want something to be able to take damage, but never die, set it's maxHealth to 0 or lower.
     public int maxHealth = 10;
+    //If you want currentHealth to start at maxHealth, have it be -1.
     public int currentHealth = -1;
+    //If you want this reciever to entirely ignore damage, set ignoreDamage to true.
     public bool ignoreDamage = false;
 
     protected virtual void Start()
@@ -20,7 +23,7 @@ public class DamageReciever : MonoBehaviour {
     {
         if(ignoreDamage) { return; }
         currentHealth -= attacker.damage;
-        if(currentHealth <= 0)
+        if(currentHealth <= 0 && maxHealth > 0)
         {
             Die(attacker);
         }

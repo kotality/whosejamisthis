@@ -42,10 +42,16 @@ public class AngerState : State {
     public override void OnExit()
     {
         base.OnExit();
-        if(_aim.MyAgent.isOnNavMesh)
+        if (_aim)
         {
-            _aim.MyAgent.SetDestination(owner.transform.position);
-            _aim.MyAgent.isStopped = false;
+            if (_aim.MyAgent)
+            {
+                if (_aim.MyAgent.isOnNavMesh)
+                {
+                    _aim.MyAgent.SetDestination(owner.transform.position);
+                    _aim.MyAgent.isStopped = false;
+                }
+            }
         }
     }
 }

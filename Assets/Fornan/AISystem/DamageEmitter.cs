@@ -42,6 +42,7 @@ public class DamageEmitter : MonoBehaviour {
         }
     }
 
+    //UseAttack triggers an animation. The animation has an Animation Event that calls ApplyDamage on this object at the right time to actually apply damage.
     public virtual void UseAttack(GameObject recipient)
     {
         if(attackCoolDownRemaining > 0.0f) { return; }
@@ -80,11 +81,11 @@ public class DamageEmitter : MonoBehaviour {
 
         foreach(Collider c in _intersectingColliders)
         {
-            //DamageReciever dr = c.getComponent<DamageReciever>()
-            //if(dr)
-            //{
-            //  dr.GetDamageFrom(this);
-            //}
+            DamageReciever dr = c.GetComponent<DamageReciever>();
+            if(dr)
+            {
+              dr.TakeDamageFrom(this);
+            }
         }
         SetFreezePosition(false);
         currentlyAttacking = false;

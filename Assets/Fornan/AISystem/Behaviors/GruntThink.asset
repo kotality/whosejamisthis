@@ -21,5 +21,5 @@ MonoBehaviour:
   IdleState: {fileID: 11400000, guid: fdc21bd63c0d2274ca33cb7f5d534b62, type: 2}
   PatrolState: {fileID: 11400000, guid: 69859fba69a02b54db5828b90740e8ad, type: 2}
   visionProximityRadius: 7
-  visionSightDistance: 15
+  visionSightDistance: 30
   visionCone: 135

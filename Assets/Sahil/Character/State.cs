@@ -29,11 +29,4 @@ public class State : ScriptableObject {
     {
         _isActive = false;
     }
-
-    
-
-    protected virtual void OnDisable()
-    {
-        OnExit();
-    }
 }

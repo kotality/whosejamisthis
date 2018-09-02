@@ -25,39 +25,27 @@ public class GenericThink : State {
 
     public override void OnTick()
     {
+        if (CanOwnerSee(Player.Self.CurrentPossession))
+        {
+            aim.creatureToBeAngryAt = Player.Self.CurrentPossession;
+            timeLeftOnState = AngryState.usualDuration;
+            aim.NextState = AngryState;
+        }
+
         if (timeLeftOnState <= 0.0f)
         {
             aim.creatureToBeAngryAt = null;
 
-            if(CanOwnerSee(Player.Self.CurrentPossession))
+            float rng = Random.value;
+            if (rng <= 0.7f)
             {
-                aim.creatureToBeAngryAt = Player.Self.CurrentPossession;
+                aim.NextState = PatrolState;
             }
             else
             {
-                float rng = Random.value;
-                if (rng <= 0.7f)
-                {
-                    aim.NextState = PatrolState;
-                }
-                else
-                {
-                    aim.NextState = IdleState;
-                }
-                timeLeftOnState = Random.Range(1.0f, aim.NextState.usualDuration);
+                aim.NextState = IdleState;
             }
-        }
-        else if(aim.creatureToBeAngryAt != null)
-        {
-            aim.NextState = AngryState;
-            if(CanOwnerSee(aim.creatureToBeAngryAt))
-            {
-                timeLeftOnState = AngryState.usualDuration;
-            }
-            else
-            {
-                timeLeftOnState -= Time.deltaTime;
-            }
+            timeLeftOnState = Random.Range(1.0f, aim.NextState.usualDuration);
         }
         else
         {
@@ -68,7 +56,10 @@ public class GenericThink : State {
     public override void OnExit()
     {
         base.OnExit();
-        aim.NextState = null;
+        if(aim)
+        {
+            aim.NextState = null;
+        }
     }
 
     public virtual bool CanOwnerSee(GameObject other)
